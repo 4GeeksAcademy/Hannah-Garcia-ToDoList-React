@@ -1,12 +1,88 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-/* 
+.todoList {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 20px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 100;
+    color: #e6e6e6;
+    margin: 0 0 20px;
+}
 
-*/
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    outline: none;
+}
+
+.todo {
+    background: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.todo:hover {
+    background: #f0f0f0;
+}
+
+.todo div {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #ff8a80;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff5252;
+}
+
+.todo .complete {
+    background: #81c784;
+}
+
+.todo .complete:hover {
+    background: #66bb6a;
+}
+
+.todo.completed {
+    text-decoration: line-through;
+    color: #d9d9d9;
+}
+.tasks-left {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
